@@ -84,17 +84,7 @@ class NumberedCanvas(canvas.Canvas):
             self.setLineWidth(0.5)
             self.line(54, 11 * 72 - 40, 8.5 * 72 - 54, 11 * 72 - 40)
 
-            self.line(54, 45, 8.5 * 72 - 54, 45)
-            self.drawString(
-                54,
-                32,
-                "Department of Computer Engineering & Department of Physics, DBATU",
-            )
-            self.drawRightString(
-                8.5 * 72 - 54,
-                32,
-                f"Page {self._pageNumber} of {total_pages}",
-            )
+            pass  # Footer removed
         self.restoreState()
 
 
